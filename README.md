@@ -51,6 +51,7 @@ cat < file1
 
 cat < file2
 ## OUTPUT
+![02cat](./img/02cat.png)
 
 
 # Comparing Files
