@@ -58,7 +58,8 @@ cat < file2
 cmp file1 file2
 ## OUTPUT
 ![03cmp](./img/03cmp.png)
-comm file1 file2
+ 
+ comm file1 file2
  ## OUTPUT
 
  
