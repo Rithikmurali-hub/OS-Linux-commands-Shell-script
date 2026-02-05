@@ -42,6 +42,8 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
+![01cat.png](/img/01cat.png)
+
 
 
 
