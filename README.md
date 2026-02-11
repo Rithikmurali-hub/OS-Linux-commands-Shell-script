@@ -97,11 +97,13 @@ cut -c1-3 file11
 
 cut -d "|" -f 1 file22
 ## OUTPUT
+![07](./img/07.png)
 
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
+![08](./img/08.png)
 
 
 cat < newfile 
@@ -116,6 +118,7 @@ hello world
  
 grep Hello newfile 
 ## OUTPUT
+![09](./img/09.png)
 
 
 
