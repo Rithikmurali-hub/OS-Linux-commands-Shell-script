@@ -124,6 +124,7 @@ grep Hello newfile
 
 grep hello newfile 
 ## OUTPUT
+![10](./img/10.png)
 
 
 
