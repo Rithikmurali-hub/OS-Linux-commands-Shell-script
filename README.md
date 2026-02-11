@@ -59,12 +59,14 @@ cmp file1 file2
 ## OUTPUT
 ![03cmp](./img/03cmp.png)
  
- comm file1 file2
+comm file1 file2
  ## OUTPUT
+ ![04](./img/04.png)
 
  
 diff file1 file2
 ## OUTPUT
+![05](./img/04.png)
 
 
 #Filters
@@ -88,6 +90,7 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
+![06](./img/06.png)
 
 
 
