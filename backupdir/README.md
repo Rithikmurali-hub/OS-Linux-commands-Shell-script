@@ -421,8 +421,6 @@ cat urllist.txt | tr -d ' ' | tr -s '.'
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-![54](./img/54.png)
-![55](./img/55.png)
 
 
 mkdir backupdir
@@ -433,24 +431,18 @@ cd backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
-![56](./img/56.png)
-![57](./img/57.png)
 
 
 tar -xvf backup.tar
 ## OUTPUT
-![58](./img/58.png)
-![59](./img/59.png)
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
-![60](./img/60.png)
  
 gunzip backup.tar.gz
 ## OUTPUT
-![61](./img/61.png)
 
  
 # Shell Script
@@ -461,7 +453,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
-![62](./img/62.png)
+
  
 cat << stop > herecheck.txt
 ```
@@ -473,7 +465,6 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-![63](./img/63.png)
 
 
 cat < scriptest.sh 
@@ -512,7 +503,7 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
-![64](./img/64.png)
+
  
 ls file1
 ## OUTPUT
