@@ -516,9 +516,11 @@ chmod 777 scriptest.sh
  
 ls file1
 ## OUTPUT
+![65](./img/65.png)
 
 echo $?
 ## OUTPUT 
+![66](./img/66.png)
 ./one
 bash: ./one: Permission denied
  
