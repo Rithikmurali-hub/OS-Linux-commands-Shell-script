@@ -131,28 +131,37 @@ grep hello newfile
 
 grep -v hello newfile 
 ## OUTPUT
+![11](./img/11.png)
 
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
+![12](./img/12.png)
 
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
-
+![13](./img/13.png)
 
 
 
 grep -R ubuntu /etc
 ## OUTPUT
+![14](./img/14.png)
+![15](./img/15.png)
+![16](./img/16.png)
+![17](./img/17.png)
+![18](./img/18.png)
+![19](./img/19.png)
 
 
 
 grep -w -n world newfile   
 ## OUTPUT
+![20](./img/20.png)
 
 
 cat < newfile 
@@ -176,59 +185,71 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
+![21](./img/21.png)
 
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
+![22](./img/22.png)
 
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
+![23](./img/23.png)
 
 
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
+![24](./img/24.png)
 
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
-
+![25](./img/25.png)
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
+![26](./img/26.png)
 
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
+![27](./img/27.png)
 
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
+![28](./img/28.png)
 
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
+![29](./img/29.png)
 
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
+![30](./img/30.png)
 
 
 egrep l{2} newfile
 ## OUTPUT
+![31](./img/31.png)
+
 
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
+![32](./img/32.png)
 
 
 cat > file23
@@ -247,52 +268,60 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
-
+![33](./img/33.png)
 
 
 sed -n -e '$p' file23
 ## OUTPUT
-
+![34](./img/34.png)
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
+![35](./img/35.png)
 
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
+![36](./img/36.png)
 
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
+![37](./img/37.png)
 
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
+![38](./img/38.png)
 
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
+![39](./img/39.png)
 
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
+![40](./img/40.png)
 
 
 
 seq 10 
 ## OUTPUT
+![41](./img/41.png)
 
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
+![42](./img/42.png)
 
 
 
