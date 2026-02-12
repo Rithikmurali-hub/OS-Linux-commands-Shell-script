@@ -526,11 +526,13 @@ bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
+![67](./img/67.png)
  
 abcd
  
 echo $?
  ## OUTPUT
+ ![68](./img/68.png)
 
 
  
@@ -563,6 +565,7 @@ echo "$val1 is less than $val2"
 fi
 ```
 ##OUTPUT
+![69](./img/69.png)
 
 
 
@@ -570,38 +573,30 @@ chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
+![70](./img/70.png)
 
 
 # check file ownership
-cat < psswdperm.sh 
+cat > psswdperm.sh 
 ```bash
-\#!/bin/bash
+#!/bin/bash
 if [ -O /etc/passwd ]
 then
-echo “You are the owner of the /etc/passwd file”
+echo "You are the owner of the /etc/passwd file"
 else
-echo “Sorry, you are not the owner of the /etc/passwd file”
+echo "Sorry, you are not the owner of the /etc/passwd file"
 fi
-^d
 ```
 
-cat psswdperm.sh 
-```bash
-/#!/bin/bash
-if [ -O /etc/passwd ]
-then
-echo “You are the owner of the /etc/passwd file”
-else
-echo “Sorry, you are not the owner of the /etc/passwd file”
-fi
- ```
+ chmod 777 psswdperm.sh
 ./psswdperm.sh
 ## OUTPUT
+![71](./img/71.png)
 
 # check if with file location
-cat>ifnested.sh 
+cat > ifnested.sh 
 ```bash
-\#!/bin/bash
+#!/bin/bash
 if [ -e $HOME ]
 then
 echo “$HOME The object exists, is it a file?”
@@ -620,55 +615,17 @@ echo “Sorry, the object does not exist”
 fi
 ^d
 ```
-cat ifnested.sh 
-```
-\#!/bin/bash
-if [ -e $HOME ]
-then
-echo “$HOME The object exists, is it a file?”
-if [ -f $HOME ]
-then
-echo “Yes,$HOME it is a file!”
-else
-echo “No,$HOME it is not a file!”
-if [ -f $HOME/.bash_history ]
-then
-echo “But $HOME/.bash_history is a file!”
-fi
-fi
-else
-echo “Sorry, the object does not exist”
-fi
-```
-
+chmod 777 ifnested.sh
 ./ifnested.sh 
 ## OUTPUT
+![72](./img/72.png)
 
 
 
 # using numeric test comparisons
 cat > iftest.sh 
 ```bash
-\#!/bin/bash
-val1=10
-val2=11
-if [ $val1 -gt 5 ]
-then
-echo “The test value $val1 is greater than 5”
-fi
-if [ $val1 -eq $val2 ]
-then
-echo “The values are equal”
-else
-echo “The values are different”
-fi
-^d
-```
-
-
-cat iftest.sh 
-```bash
-\#!/bin/bash
+#!/bin/bash
 val1=10
 val2=11
 if [ $val1 -gt 5 ]
@@ -686,34 +643,13 @@ fi
 $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
-##OUTPUT
+## OUTPUT
+![73](./img/73.png)
 
 # check if a file
 cat > ifnested.sh 
 ```bash
-\#!/bin/bash
-if [ -e $HOME ]
-then
-echo “$HOME The object exists, is it a file?”
-if [ -f $HOME ]
-then
-echo “Yes,$HOME it is a file!”
-else
-echo “No,$HOME it is not a file!”
-if [ -f $HOME/.bash_history ]
-then
-echo “But $HOME/.bash_history is a file!”
-fi
-fi
-else
-echo “Sorry, the object does not exist”
-fi
-^d
-```
-
-cat ifnested.sh 
-```bash
-\#!/bin/bash
+#!/bin/bash
 if [ -e $HOME ]
 then
 echo “$HOME The object exists, is it a file?”
@@ -735,12 +671,13 @@ fi
 $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
-##OUTPUT
+## OUTPUT
+![74](./img/74.png)
 
 # looking for a possible value using elif
-cat elifcheck.sh 
+cat > elifcheck.sh 
 ```bash
-\#!/bin/bash
+#!/bin/bash
 if [ $USER = Ram ]
 then
 echo "Welcome $USER"
@@ -764,12 +701,12 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
-
+![75](./img/75.png)
 
 # testing compound comparisons
-cat> ifcompound.sh 
+cat > ifcompound.sh 
 ```bash
-\#!/bin/bash
+#!/bin/bash
 if [ -d $HOME ] && [ -w $HOME ]
 then
 echo "The file exists and you can write to it"
@@ -780,9 +717,10 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
+![76](./img/76.png)
 
 # using the case command
-cat >casecheck.sh 
+cat > casecheck.sh 
 ```bash
 case $USER in
 Ram | Robert)
@@ -799,8 +737,10 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
+## output
+![77](./img/77.png)
  
-cat > whiletest
+cat > whiletest.sh
 ```bash
 #!/bin/bash
 #while command test
@@ -814,11 +754,13 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
+## output
+![78](./img/78.png)
  
  
-cat untiltest.sh 
+cat > untiltest.sh 
 ```bash
-\#using the until command
+#using the until command
 var1=100
 until [ $var1 -eq 0 ]
 do
@@ -828,12 +770,15 @@ done
 ``` 
 $ chmod 755 untiltest.sh
  
+ ./untiltest.sh
+
+ ## OUTPUT
+ ![79](./img/79.png)
  
- 
-cat forin1.sh 
+cat > forin1.sh 
 ```bash
-\#!/bin/bash
-\#basic for command
+#!/bin/bash
+#basic for command
 for test in Alabama Alaska Arizona Arkansas California Colorado
 do
 echo The next state is $test
@@ -841,9 +786,9 @@ done
  ```
  
 $ chmod 755 forin1.sh
+ ./forin1.sh
  
- 
-cat forin2.sh 
+cat >forin2.sh 
 ```bash
 \#!/bin/bash
 \# another example of how not to use the for command
@@ -854,8 +799,12 @@ done
  ```
  
 $ chmod 755 forin2.sh
- 
-cat forin2.sh 
+ ./forin2.sh
+
+ ## output
+
+
+cat > forin3.sh 
 ```bash
 \#!/bin/bash
 \# another example of how not to use the for command
@@ -864,9 +813,13 @@ do
 echo “word:$test”
 done
 ```
-$ chmod 755 forin2.sh
+$ chmod 755 forin3.sh
  
 $ ./forin2.sh 
+
+## output
+
+
  
 cat forin3.sh 
 ```bash
@@ -877,28 +830,20 @@ do
 echo "word:$test"
 done
 ```
+chmod 777 forin3.sh
 $ ./forin3.sh 
- 
-cat forin1.sh 
-```bash
-#!/bin/bash
-# basic for command
-for test in Alabama Alaska Arizona Arkansas California Colorado
-do
-echo The next state is $test
-done
-```
-$ chmod 755 forin1.sh
+ ## output
 
-## OUTPUT
-cat forinfile.sh 
+
+
+cat > forinfile.sh 
 ```bash
 #!/bin/bash
 # reading values from a file
 file="cities"
 for state in `cat $file`
 do
-echo "Visit beautiful $file“
+echo "Visit beautiful $file"
 done
 ```
 $ chmod 777 forinfile.sh
@@ -910,6 +855,8 @@ Warangal
 Adilabad
 Bhadrachalam
 Khammam
+
+./forinfile.sh
 
 ## OUTPUT
 
