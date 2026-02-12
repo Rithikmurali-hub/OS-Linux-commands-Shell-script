@@ -66,7 +66,7 @@ comm file1 file2
  
 diff file1 file2
 ## OUTPUT
-![05](./img/04.png)
+![05](./img/05.png)
 
 
 #Filters
@@ -787,10 +787,12 @@ done
  
 $ chmod 755 forin1.sh
  ./forin1.sh
+ ## output
+ ![80](./img/80.png)
  
-cat >forin2.sh 
+cat > forin2.sh 
 ```bash
-\#!/bin/bash
+#!/bin/bash
 \# another example of how not to use the for command
 for test in I don't know if this'll work
 do
@@ -802,11 +804,12 @@ $ chmod 755 forin2.sh
  ./forin2.sh
 
  ## output
+ ![81](./img/81.png)
 
 
 cat > forin3.sh 
 ```bash
-\#!/bin/bash
+#!/bin/bash
 \# another example of how not to use the for command
 for test in I don't know if this'll work
 do
@@ -815,25 +818,10 @@ done
 ```
 $ chmod 755 forin3.sh
  
-$ ./forin2.sh 
+$ ./forin3.sh 
 
 ## output
-
-
- 
-cat forin3.sh 
-```bash
-\#!/bin/bash
-\# another example of how not to use the for command
-for test in I don\'t know if "this'll" work
-do
-echo "word:$test"
-done
-```
-chmod 777 forin3.sh
-$ ./forin3.sh 
- ## output
-
+![82](./img/82.png)
 
 
 cat > forinfile.sh 
