@@ -847,9 +847,9 @@ Khammam
 ./forinfile.sh
 
 ## OUTPUT
+![83](./img/83.png)
 
-
-cat forctype.sh 
+cat > forctype.sh 
 ```bash
 #!/bin/bash
 # testing the C-style for loop
@@ -861,8 +861,9 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
+![84](./img/84.png)
 
-cat forctype1.sh 
+cat > forctype1.sh 
 ```bash
 #!/bin/bash
 # multiple variables
@@ -874,8 +875,9 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
+![85](./img/85.png)
 
-cat fornested1.sh 
+cat > fornested1.sh 
 ```bash
 #!/bin/bash
 # nesting for loops
@@ -892,9 +894,10 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
+ ![86](./img/86.png)
 
  
-cat forbreak.sh 
+cat > forbreak.sh 
 ```bash
 #!/bin/bash
 # breaking out of a for loop
@@ -908,13 +911,15 @@ echo "Iteration number: $var1"
 done
 echo "The for loop is completed“
 ```
-## OUTPUT
 
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
+## output
+![87](./img/87.png)
+
  
-cat forbreak.sh 
+cat > forcontinue.sh 
 ```bash
 #!/bin/bash
 # breaking out of a for loop
@@ -934,8 +939,8 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
- 
-cat exread.sh 
+ ![88](./img/88.png)
+cat > exread.sh 
 ```bash
 #!/bin/bash
 # testing the read command
@@ -948,9 +953,10 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
+![89](./img/89.png)
 
 
- cat exread1.sh
+ cat > exread1.sh
 ```bash
 #!/bin/bash
 # testing the read command
@@ -958,14 +964,13 @@ read -p "Enter your name: " name
 echo "Hello $name, welcome to my program. “
 ``` 
 $ chmod 755 exread1.sh 
+$ ./exread1.sh
 
 ## OUTPUT
+![90](./img/90.png)
 
-
-
-$ ./exread1.sh 
  
-cat funcex.sh
+cat > funcex.sh
 ```bash
 #!/bin/bash
 # trying to access script parameters inside a function
@@ -980,14 +985,15 @@ else
 echo "Usage: badtest1 a b"
 fi
 ```
-## OUTPUT
- ./funcex.sh 
+$ chmod 755 funcex.sh
+
+ $ ./funcex.sh 
+## output
+![91](./img/91.png)
+ 
 
  
- ./funcex.sh 1 2
-
- 
-cat argshift.sh
+cat > argshift.sh
 ```bash
 #!/bin/bash 
  while (( "$#" )); do 
@@ -996,11 +1002,12 @@ cat argshift.sh
 done
 ```
 $ chmod 777 argshift.sh
-
-## OUTPUT
 $ ./argshift.sh 1 2 3
+## OUTPUT
+![92](./img/92.png)
+
  
- cat argshift1.sh
+ cat > argshift1.sh
 ```bash
  #/bin/bash 
  # store arguments in a special array 
@@ -1016,8 +1023,10 @@ done
 $ chmod 777 argshift.sh
 ## OUTPUT
 $ ./argshift.sh 1 2 3
+## output
+![93](./img/93.png)
  
-cat argshift.sh
+cat > argshift.sh
 ```bash
 #!/bin/bash 
 set -x 
@@ -1027,8 +1036,11 @@ while (( "$#" )); do
 done
 set +x
 ```
-## OUTPUT
- ./argshift.sh 1 2 3
+$ chmod 777 argshift.sh
+$ ./argshift.sh 1 2 3
+## output
+![94](./img/94.png)
+
  
  
 cat > nc.awk
@@ -1045,7 +1057,7 @@ print "Number of Lines are",NR
 print "No of Words count:",wordcount
 }
  ```
-cat>data.dat
+cat > data.dat
 ```bash
 bcdfghj
 abcdfghj
@@ -1060,7 +1072,7 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
- 
+ ![95](./img/95.png)
 cat > palindrome.sh
 ```bash
 #num=545
@@ -1086,7 +1098,10 @@ else
 	echo "Number is NOT palindrome"
 fi
 ```
+$chmod 755 palindrome.sh
+$./palindrome.sh
 ## OUTPUT 
+![96](./img/96.png)
 
 
 # RESULT:
